@@ -12,7 +12,7 @@ let package = Package(
             name: "Closures",
             path: "Xcode/Closures",
             swiftSettings: [
-                .unsafeFlags(["-Onone"], .when(configuration: .debug))
+                .unsafeFlags(["-Osize"], .when(configuration: .release))
             ]
         )
     ]
