@@ -12,7 +12,7 @@ let package = Package(
             name: "Closures",
             path: "Xcode/Closures",
             swiftSettings: [
-                .unsafeFlags(["-Osize"], .when(configuration: .release))
+                .unsafeFlags(["-Xfrontend", "-disable-pass=DeadArgSignatureOpt"], .when(configuration: .release))
             ]
         )
     ]
